@@ -1,18 +1,21 @@
 **/*.*
+
 /!build/*
 /!install/*
 /!installers/*
 
-!/src/**/*[.cpp]
-!/tests/**/*[.cpp]
+!/.git*
+!/License*
 
+!/.github/workflows/*.yml
+!/scripts/*[.ps1]
+
+# Project related
 !/.clang-*
 !/CMake*[.txt, .json]
 !/vcpkg.json
 
-!/scripts/*[.ps1]
-
-!/License*
-!/.gitignore
-
-!/.github/workflows/*.yml
+# All Examples
+!/examples/*/src/**/*[.cpp]
+!/examples/*/tests/**/*[.cpp]
+!/examples/CMakeLists.txt
